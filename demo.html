@@ -115,7 +115,37 @@ function displayKata() {
 
 
 function runIt() {
-    document.getElementById("txt").innerHTML =  whoIsWinner(["C_Yellow",
+    document.getElementById("txt").innerHTML = `Ouput for<br> ["C_Yellow",<br>
+          "E_Red",<br>
+          "G_Yellow",<br>
+          "B_Red",<br>
+          "D_Yellow",<br>
+          "B_Red",<br>
+          "B_Yellow",<br>
+          "G_Red",<br>
+          "C_Yellow",<br>
+          "C_Red",<br>
+          "D_Yellow",<br>
+          "F_Red",<br>
+          "E_Yellow",<br>
+          "A_Red",<br>
+          "A_Yellow",<br>
+          "G_Red",<br>
+          "A_Yellow",<br>
+          "F_Red",<br>
+          "F_Yellow",<br>
+          "D_Red",<br>
+          "B_Yellow",<br>
+          "E_Red",<br>
+          "D_Yellow",<br>
+          "A_Red",<br>
+          "G_Yellow",<br>
+          "D_Red",<br>
+          "D_Yellow",<br>
+          "C_Red"] :<br><br>`
+
+
+    document.getElementById("txt").innerHTML +=  whoIsWinner(["C_Yellow",
           "E_Red",
           "G_Yellow",
           "B_Red",
@@ -143,6 +173,8 @@ function runIt() {
           "D_Red",
           "D_Yellow",
           "C_Red"])
+
+          document.getElementById("txt").innerHTML += `<br><br>Check the console to see the grid`
 }
 
 
